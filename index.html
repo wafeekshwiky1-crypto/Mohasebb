@@ -219,5 +219,97 @@
   </footer>
 
   <script src="script.js"></script>
+  <!-- أزرار التواصل العائمة الاحترافية -->
+<div class="floating-contact">
+  <!-- واتساب -->
+  <a href="https://wa.me/963945644065" target="_blank" class="contact-btn whatsapp">
+    <span class="icon">📱</span>
+    <span class="text">واتساب</span>
+  </a>
+
+  <!-- البريد الإلكتروني -->
+  <a href="mailto:Wafeekshwiky1@gmail.com" class="contact-btn email">
+    <span class="icon">📧</span>
+    <span class="text">البريد الإلكتروني</span>
+  </a>
+</div>
+
+<style>
+/* الحاوية العائمة */
+.floating-contact {
+  position: fixed;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  z-index: 1000;
+}
+
+/* الأزرار */
+.contact-btn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-color: #0073e6;
+  color: white;
+  padding: 12px 15px;
+  border-radius: 30px 0 0 30px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+
+/* أيقونة */
+.contact-btn .icon {
+  font-size: 20px;
+}
+
+/* النص */
+.contact-btn .text {
+  white-space: nowrap;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+/* عند المرور على الزر */
+.contact-btn:hover {
+  padding-right: 20px;
+}
+
+.contact-btn:hover .text {
+  opacity: 1;
+}
+
+/* تخصيص الألوان */
+.contact-btn.whatsapp {
+  background-color: #25D366;
+}
+
+.contact-btn.email {
+  background-color: #0073e6;
+}
+
+/* متوافق مع الجوال */
+@media (max-width: 768px) {
+  .floating-contact {
+    top: auto;
+    bottom: 20px;
+    right: 20px;
+    flex-direction: row;
+  }
+
+  .contact-btn {
+    border-radius: 30px;
+    padding: 12px 15px;
+  }
+
+  .contact-btn .text {
+    display: none; /* إخفاء النص على الجوال للحجم الصغير */
+  }
+}
+</style>
 </body>
 </html>
