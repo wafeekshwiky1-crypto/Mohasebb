@@ -173,25 +173,39 @@
       <h3>تواصل معنا</h3>
       <p class="lead">أرسل تفاصيل مشروعك أو تواصل مباشرة عبر واتساب من خلال الزر الأخضر.</p>
       <div class="contact-grid">
-        <form id="contactForm" class="form" method="POST" action="https://formspree.io/f/your-form-id">
-          <label>الاسم<input name="name" type="text" required></label>
-          <label>البريد الإلكتروني<input name="email" type="email"></label>
-          <label>الهاتف<input name="phone" type="tel"></label>
-          <label>الخدمة المطلوبة
-            <select name="service">
-              <option>مسك الدفاتر</option>
-              <option>قوائم مالية</option>
-              <option>رواتب</option>
-              <option>استشارات ضريبية</option>
-            </select>
-          </label>
-          <label>تفاصيل إضافية<textarea name="message" rows="5"></textarea></label>
-          <div class="form-actions">
-            <button class="btn" type="submit">أرسل الطلب</button>
-            <button class="btn ghost reset" type="button">مسح</button>
-          </div>
-          <p id="formStatus" class="form-status" aria-live="polite"></p>
-        </form>
+       <form id="contactForm" class="form" method="POST" action="https://formspree.io/f/mqadnwgb">
+  <label>الاسم
+    <input name="name" type="text" required>
+  </label>
+
+  <label>البريد الإلكتروني
+    <input name="email" type="email" required>
+  </label>
+
+  <label>الهاتف
+    <input name="phone" type="tel">
+  </label>
+
+  <label>الخدمة المطلوبة
+    <select name="service">
+      <option>مسك الدفاتر</option>
+      <option>قوائم مالية</option>
+      <option>رواتب</option>
+      <option>استشارات ضريبية</option>
+    </select>
+  </label>
+
+  <label>تفاصيل إضافية
+    <textarea name="message" rows="5"></textarea>
+  </label>
+
+  <div class="form-actions">
+    <button class="btn" type="submit">أرسل الطلب</button>
+    <button class="btn ghost reset" type="button">مسح</button>
+  </div>
+
+  <p id="formStatus" class="form-status" aria-live="polite"></p>
+</form>
 
         <aside class="contact-aside">
           <div class="contact-card">
